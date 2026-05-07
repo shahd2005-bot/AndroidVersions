@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloToastEnhancement</string>
+    <string name="Toast">Toast</string>
+    <string name="Count">Count</string>
+    <string name="Zero">Zero</string>
+    <string name="show_count">0</string>
+    <string name="Hello_text">Hello Constraint</string>
+
+</resources>
