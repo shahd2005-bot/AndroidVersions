@@ -1,4 +1,4 @@
-package com.example.HelloToastEnhancement;
+package com.example.simpleCalc;
 
 import android.content.Context;
 

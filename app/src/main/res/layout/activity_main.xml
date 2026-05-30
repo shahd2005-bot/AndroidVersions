@@ -1,63 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    android:background="#FFFF00"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        android:inputType="numberDecimal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green"
+            android:text="ADD"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="SUB"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue2"
+            android:text="DIV"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yellow"
+            android:text="MUL"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/showCount"
+        android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="120sp"
-        android:textColor="@android:color/black"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:text="Result"
+        android:textSize="28sp"
+        android:paddingTop="20dp"/>
 
-    <android.widget.Button
-        android:id="@+id/buttonToast"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Toast"
-        android:onClick="showToast"
-        android:textColor="@android:color/white"
-        android:background="@android:color/holo_blue_light"
-        app:layout_constraintTop_toTopOf="@id/showCount"
-        app:layout_constraintBottom_toTopOf="@id/buttonZero"
-        app:layout_constraintEnd_toStartOf="@id/showCount"
-        android:layout_marginEnd="16dp" />
-
-    <android.widget.Button
-        android:id="@+id/buttonZero"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Zero"
-        android:onClick="showZero"
-        android:textColor="@android:color/white"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintTop_toBottomOf="@id/buttonToast"
-        app:layout_constraintBottom_toTopOf="@id/buttonCount"
-        app:layout_constraintEnd_toStartOf="@id/showCount"
-        android:layout_marginEnd="16dp" />
-
-    <android.widget.Button
-        android:id="@+id/buttonCount"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Count"
-        android:onClick="showCount"
-        android:textColor="@android:color/white"
-        android:background="@android:color/holo_green_light"
-        app:layout_constraintTop_toBottomOf="@id/buttonZero"
-        app:layout_constraintBottom_toBottomOf="@id/showCount"
-        app:layout_constraintEnd_toStartOf="@id/showCount"
-        android:layout_marginEnd="16dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
