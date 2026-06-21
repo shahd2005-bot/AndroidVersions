@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace "com.example.simpleCalc"
+    namespace "com.example.AndroidVersions"
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.SimpleCalc"
+        applicationId "com.example.AndroidVersions"
         minSdk 24
         targetSdk 34
         versionCode 1

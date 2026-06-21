@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">SimpleCalc</string>
+    <string name="app_name">AndroidVersions</string>
     <string name="Toast">Toast</string>
     <string name="Count">Count</string>
     <string name="Zero">Zero</string>
     <string name="show_count">0</string>
-    <string name="Hello_text">Hello Constraint</string>
+    <string name="Hello_text">Hello shahd</string>
 
 </resources>

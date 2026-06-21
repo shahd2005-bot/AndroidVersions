@@ -1,0 +1,23 @@
+package com.example.AndroidVersions;
+
+public class AndroidVersion {
+  public int imageResId;
+    public String codeName;
+    public String version;
+
+    public AndroidVersion(int imageResId, String codeName, String version) {
+        this.imageResId = imageResId;
+        this.codeName = codeName;
+        this.version = version;
+    }
+
+    public int getImageResId() {
+        return imageResId;
+    }
+    public String getCodeName() {
+
+        return codeName; }
+    public String getVersion() {
+        return version;
+    }
+}
